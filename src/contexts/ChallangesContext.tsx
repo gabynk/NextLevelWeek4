@@ -17,7 +17,6 @@ interface ChallengesContextData {
     challengesCompleted: number;
     activeChallenge: Challenge;
     experienceToNextLevel: number;
-    levelUp: () => void;
     startNewChallenge: () => void;
     resetChallenge: () => void;
     completeChallenge: () => void;
@@ -107,7 +106,6 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
                 challengesCompleted,
                 activeChallenge,
                 experienceToNextLevel,
-                levelUp,
                 startNewChallenge,
                 resetChallenge,
                 completeChallenge,
